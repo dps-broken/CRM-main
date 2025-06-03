@@ -353,8 +353,8 @@ body {
 .summary-card:hover,
 .chart-container:hover,
 .data-table-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+    transform: translateY(-1px);
+    box-shadow: 0 12px 40px 0 rgba(184, 184, 184, 0.45);
 }
 
 .summary-cards {

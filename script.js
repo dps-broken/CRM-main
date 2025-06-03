@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const tabContentsInPage = pageElement.querySelectorAll('.tab-content');
         if (tabLinks.length > 0 && tabContentsInPage.length > 0) {
             tabLinks.forEach(tabLink => {
-                tabLink.addEventListener('click', function(e) {
+                tabLink.addEventListener('click', function (e) {
                     e.preventDefault();
                     tabLinks.forEach(tl => tl.classList.remove('active'));
                     tabContentsInPage.forEach(tc => tc.classList.remove('active'));
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const progressBar = document.getElementById('overallSessionProgress');
         progressBar.style.width = progressPercent + '%';
         progressBar.textContent = progressPercent + '%';
-        
+
         userEditModal.style.display = "block";
     }
 
@@ -111,35 +111,35 @@ document.addEventListener('DOMContentLoaded', function () {
         userEditModal.style.display = "none";
     }
 
-    if (usersTableBody) {
-        usersTableBody.addEventListener('click', function(event) {
-            const editButton = event.target.closest('.btn-edit-user');
-            if (editButton) {
-                const userId = editButton.dataset.userid;
-                openUserEditModal(userId);
-            }
-        });
-    }
+    // if (usersTableBody) {
+    //     usersTableBody.addEventListener('click', function (event) {
+    //         const editButton = event.target.closest('.btn-edit-user');
+    //         if (editButton) {
+    //             const userId = editButton.dataset.userid;
+    //             openUserEditModal(userId);
+    //         }
+    //     });
+    // }
 
-    if (closeUserEditModalBtn) closeUserEditModalBtn.onclick = closeUserEditModal;
-    if (cancelUserEditBtn) cancelUserEditBtn.onclick = closeUserEditModal;
+    // if (closeUserEditModalBtn) closeUserEditModalBtn.onclick = closeUserEditModal;
+    // if (cancelUserEditBtn) cancelUserEditBtn.onclick = closeUserEditModal;
 
-    if (saveUserChangesBtn) {
-        saveUserChangesBtn.addEventListener('click', function() {
-            const userId = document.getElementById('editUserId').value;
-            const updatedUserData = {
-                userType: document.getElementById('editUserType').value,
-                gender: document.getElementById('editUserGender').value,
-                ageGroup: document.getElementById('editUserAgeGroup').value,
-                jobTitle: document.getElementById('editUserJobTitle').value,
-            };
-            console.log("Saving changes for user ID:", userId, updatedUserData);
-            if(dummyUsers[userId]) {
-                dummyUsers[userId] = { ...dummyUsers[userId], ...updatedUserData };
-            }
-            closeUserEditModal();
-        });
-    }
+    // if (saveUserChangesBtn) {
+    //     saveUserChangesBtn.addEventListener('click', function () {
+    //         const userId = document.getElementById('editUserId').value;
+    //         const updatedUserData = {
+    //             userType: document.getElementById('editUserType').value,
+    //             gender: document.getElementById('editUserGender').value,
+    //             ageGroup: document.getElementById('editUserAgeGroup').value,
+    //             jobTitle: document.getElementById('editUserJobTitle').value,
+    //         };
+    //         console.log("Saving changes for user ID:", userId, updatedUserData);
+    //         if (dummyUsers[userId]) {
+    //             dummyUsers[userId] = { ...dummyUsers[userId], ...updatedUserData };
+    //         }
+    //         closeUserEditModal();
+    //     });
+    // }
 
     window.addEventListener('keydown', function (event) {
         if (event.key === 'Escape' && userEditModal.style.display === 'block') {
@@ -152,27 +152,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (selectAllUsersBtn) {
-        selectAllUsersBtn.addEventListener('click', function() {
+        selectAllUsersBtn.addEventListener('click', function () {
             getAllUserCheckboxes().forEach(checkbox => checkbox.checked = true);
-            if(masterUserCheckbox) masterUserCheckbox.checked = true;
+            if (masterUserCheckbox) masterUserCheckbox.checked = true;
         });
     }
 
     if (deselectAllUsersBtn) {
-        deselectAllUsersBtn.addEventListener('click', function() {
+        deselectAllUsersBtn.addEventListener('click', function () {
             getAllUserCheckboxes().forEach(checkbox => checkbox.checked = false);
-            if(masterUserCheckbox) masterUserCheckbox.checked = false;
+            if (masterUserCheckbox) masterUserCheckbox.checked = false;
         });
     }
-    
+
     if (masterUserCheckbox) {
-        masterUserCheckbox.addEventListener('change', function() {
+        masterUserCheckbox.addEventListener('change', function () {
             getAllUserCheckboxes().forEach(checkbox => checkbox.checked = this.checked);
         });
     }
 
     if (usersTableBody) {
-        usersTableBody.addEventListener('change', function(event){
+        usersTableBody.addEventListener('change', function (event) {
             if (event.target.classList.contains('user-select-checkbox')) {
                 if (!masterUserCheckbox) return;
                 const allCheckboxes = getAllUserCheckboxes();
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mainContent.classList.remove('sidebar-collapsed', 'sidebar-expanded');
         overlay.classList.remove('active');
         if (isMobile) { }
-        else if (isTablet) { sidebar.classList.add('collapsed'); mainContent.classList.add('sidebar-collapsed');}
+        else if (isTablet) { sidebar.classList.add('collapsed'); mainContent.classList.add('sidebar-collapsed'); }
         else { }
     }
     setInitialSidebarState();

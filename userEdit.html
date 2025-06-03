@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit User</title>
+  <link rel="stylesheet" href="./edit-user.css" />
+</head>
+
+<body>
+
+  <div class="user-edit-wrapper">
+    <div class="user-edit-container">
+      <header class="user-edit-header">
+        <h2>Edit User Details</h2>
+      </header>
+
+      <form id="user-edit-form" class="user-edit-form">
+        <input type="hidden" id="edit-user-id" name="userId" />
+
+        <div class="user-edit-row">
+          <div class="user-edit-group">
+            <label for="edit-user-type">User Type</label>
+            <select id="edit-user-type" name="userType">
+              <option value="User">User</option>
+              <option value="Manager">Manager</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+          <div class="user-edit-group">
+            <label for="edit-full-name">Full Name</label>
+            <input type="text" id="edit-full-name" name="fullName" readonly />
+          </div>
+        </div>
+
+        <div class="user-edit-row">
+          <div class="user-edit-group">
+            <label for="edit-gender">Gender</label>
+            <select id="edit-gender" name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+              <option value="PreferNotToSay">Prefer not to say</option>
+            </select>
+          </div>
+          <div class="user-edit-group">
+            <label for="edit-age-group">Age Group</label>
+            <select id="edit-age-group" name="ageGroup">
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36-45">36-45</option>
+              <option value="45+">45+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="user-edit-group">
+          <label for="edit-job-title">Job Title</label>
+          <input type="text" id="edit-job-title" name="jobTitle" placeholder="e.g., Software Developer" />
+        </div>
+
+        <div class="user-edit-group">
+          <label for="edit-email">Email</label>
+          <input type="email" id="edit-email" name="email" readonly />
+        </div>
+
+        <h4>Session Progress (Weekly)</h4>
+        <div class="user-edit-chart">
+          <svg viewBox="0 0 100 50">
+            <rect x="5" y="25" width="10" height="25" fill="var(--blue-color)" />
+            <rect x="20" y="15" width="10" height="35" fill="var(--accent-color)" />
+            <rect x="35" y="30" width="10" height="20" fill="var(--blue-color)" />
+            <rect x="50" y="10" width="10" height="40" fill="var(--accent-color)" />
+            <rect x="65" y="20" width="10" height="30" fill="var(--blue-color)" />
+            <rect x="80" y="5" width="10" height="45" fill="var(--accent-color)" />
+            <text x="7" y="48" font-size="4" fill="var(--text-primary)">W1</text>
+            <text x="22" y="48" font-size="4" fill="var(--text-primary)">W2</text>
+            <text x="37" y="48" font-size="4" fill="var(--text-primary)">W3</text>
+            <text x="52" y="48" font-size="4" fill="var(--text-primary)">W4</text>
+            <text x="67" y="48" font-size="4" fill="var(--text-primary)">W5</text>
+            <text x="82" y="48" font-size="4" fill="var(--text-primary)">W6</text>
+          </svg>
+          <small style="display:block; text-align:center; margin-top:5px;">
+            <span style="color:var(--blue-color)">■</span> Completed  
+            <span style="color:var(--accent-color)">■</span> Remaining
+          </small>
+        </div>
+
+        <h4>Overall Session Progress</h4>
+        <div class="user-progress-bar-wrap">
+          <div class="user-progress-bar" style="width: 65%;">65%</div>
+        </div>
+
+        <div class="user-edit-footer">
+          <button type="reset" class="user-btn-secondary">Cancel</button>
+          <a href="./index.html" type="submit" class="user-btn-primary">Save Changes</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

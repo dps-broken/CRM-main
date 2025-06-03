@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --primary-bg: #f9fbfd;
+  --secondary-bg: #e3e8ef;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(0, 0, 0, 0.04);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --green-color: #34d399;
+  --red-color: #f87171;
+  --yellow-color: #fcd34d;
+  --blue-color: #60a5fa;
+  --purple-color: #a78bfa;
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 10px;
+  --card-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.user-edit-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-edit-container {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  backdrop-filter: blur(10px);
+}
+
+.user-edit-header {
+  margin-bottom: 1.5rem;
+}
+
+.user-edit-header h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+}
+
+.user-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-edit-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.user-edit-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-edit-group label {
+  margin-bottom: 0.4rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.user-edit-group input,
+.user-edit-group select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--secondary-bg);
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.user-edit-group input:focus,
+.user-edit-group select:focus {
+  border-color: var(--accent-color);
+}
+
+.user-edit-chart {
+  margin-top: 1rem;
+  background: var(--primary-bg);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  border: 1px solid var(--secondary-bg);
+}
+
+.user-edit-chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.user-progress-bar-wrap {
+  width: 100%;
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.user-progress-bar {
+  height: 20px;
+  background-color: var(--green-color);
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: width 0.3s ease;
+}
+
+.user-edit-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.user-btn-primary {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.user-btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.user-btn-secondary {
+  background-color: var(--secondary-bg);
+  color: var(--text-primary);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.user-btn-secondary:hover {
+  background-color: var(--primary-bg);
+}
