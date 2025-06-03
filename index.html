@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern CRM - Admin Panel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="crm-container">
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-logo-wrapper">
                     <i class="fas fa-rocket logo-icon"></i>
-                    <span class="logo-text">CRM Pro</span>
+                    <span class="logo-text">CRM</span>
                 </div>
                 <button class="sidebar-close-btn" id="sidebarCloseBtn"><i class="fas fa-times"></i></button>
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#" class="nav-link active" data-page="dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li><a href="#" class="nav-link" data-page="leads"><i class="fas fa-users-cog"></i><span>Leads</span></a></li>
-                    <li><a href="#" class="nav-link" data-page="users"><i class="fas fa-users-gear"></i><span>Users</span></a></li>
-                    <li><a href="#" class="nav-link" data-page="onboarding"><i class="fas fa-clipboard-check"></i><span>Onboarding</span></a></li>
-                    <li><a href="#" class="nav-link" data-page="messaging"><i class="fas fa-comments"></i><span>Messaging</span></a></li>
-                    <li><a href="#" class="nav-link" data-page="reports"><i class="fas fa-chart-line"></i><span>Reports</span></a></li>
-                    <li><a href="#" class="nav-link" data-page="settings"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+                    <li><a href="#" class="nav-link active" data-page="dashboard"><i
+                                class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="leads"><i
+                                class="fas fa-users-cog"></i><span>Leads</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="users"><i
+                                class="fas fa-users-gear"></i><span>Users</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="onboarding"><i
+                                class="fas fa-clipboard-check"></i><span>Onboarding</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="messaging"><i
+                                class="fas fa-comments"></i><span>Messaging</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="reports"><i
+                                class="fas fa-chart-line"></i><span>Reports</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="settings"><i
+                                class="fas fa-cog"></i><span>Settings</span></a></li>
                 </ul>
             </nav>
             <div class="sidebar-footer">
@@ -36,7 +46,7 @@
 
         <main class="main-content" id="mainContent">
             <div class="overlay" id="overlay"></div>
-            <header class="header" id="mainHeader">
+            <header class="header">
                 <div class="header-left">
                     <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
                     <h1 id="pageTitle">Dashboard</h1>
@@ -47,9 +57,9 @@
                         <span class="notification-badge">3</span>
                     </div>
                     <div class="user-profile">
-                        <img src="https://via.placeholder.com/40/6366f1/FFFFFF?text=PD" alt="User Avatar" id="userProfileAvatarHeader">
+                        <img src="https://via.placeholder.com/40/FF4081/FFFFFF?text=PD" alt="User Avatar">
                         <div class="user-profile-details">
-                            <span id="userProfileNameHeader">Pranjal Kumar Dwivedi</span>
+                            <span>Pranjal Kumar Dwivedi</span>
                             <small class="user-designation" id="userDesignation">Admin</small>
                         </div>
                         <i class="fas fa-chevron-down"></i>
@@ -57,56 +67,257 @@
                 </div>
             </header>
 
-            <div class="page-wrapper" id="pageWrapper">
+            <div class="page-wrapper">
+
                 <section id="dashboard-page" class="page-content active">
                     <div class="summary-cards">
-                        <div class="summary-card"><h3>Active Users</h3><p>42</p><span class="trend up"><i class="fas fa-arrow-up"></i> 5</span></div>
-                        <div class="summary-card"><h3>Pending Leads</h3><p>120</p><span class="trend neutral"><i class="fas fa-minus"></i></span></div>
-                        <div class="summary-card"><h3>Onboarding Approvals</h3><p>8</p><span class="trend down"><i class="fas fa-arrow-down"></i> 2</span></div>
-                        <div class="summary-card"><h3>System Alerts</h3><p>1</p><span class="trend up"><i class="fas fa-arrow-up"></i> 1</span></div>
+                        <div class="summary-card">
+                            <h3>Active Users</h3>
+                            <p>42</p><span class="trend up"><i class="fas fa-arrow-up"></i> 5</span>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Pending Leads</h3>
+                            <p>120</p><span class="trend neutral"><i class="fas fa-minus"></i></span>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Onboarding Approvals</h3>
+                            <p>8</p><span class="trend down"><i class="fas fa-arrow-down"></i> 2</span>
+                        </div>
+                        <div class="summary-card">
+                            <h3>System Alerts</h3>
+                            <p>1</p><span class="trend up"><i class="fas fa-arrow-up"></i> 1</span>
+                        </div>
                     </div>
                     <div class="charts-section">
-                        <div class="chart-container"><h4>User Activity (Last 7 Days)</h4><div class="chart-placeholder kpi-chart"><svg viewBox="0 0 100 50"><polyline fill="none" stroke="var(--accent-color)" stroke-width="2" points="0,40 15,30 30,35 45,20 60,28 75,15 90,22"/></svg></div></div>
-                        <div class="chart-container"><h4>Lead Conversion Funnel</h4><div class="chart-placeholder bar-chart" style="flex-direction: column; align-items: center; gap: 5px;"><div style="width: 90%; height: 20%; background:var(--blue-color); text-align:center; color:white; padding:2px; border-radius:4px;">New (120)</div><div style="width: 70%; height: 20%; background:var(--yellow-color); text-align:center; color:var(--text-primary); padding:2px; border-radius:4px;">Contacted (80)</div><div style="width: 50%; height: 20%; background:var(--green-color); text-align:center; color:white; padding:2px; border-radius:4px;">Qualified (50)</div><div style="width: 30%; height: 20%; background:var(--purple-color); text-align:center; color:white; padding:2px; border-radius:4px;">Converted (25)</div></div></div>
+                        <div class="chart-container">
+                            <h4>User Activity (Last 7 Days)</h4>
+                            <div class="chart-placeholder kpi-chart"><svg viewBox="0 0 100 50">
+                                    <polyline fill="none" stroke="var(--accent-color)" stroke-width="2"
+                                        points="0,40 15,30 30,35 45,20 60,28 75,15 90,22" />
+                                </svg></div>
+                        </div>
+                        <div class="chart-container">
+                            <h4>Lead Conversion Funnel</h4>
+                            <div class="chart-placeholder bar-chart"
+                                style="flex-direction: column; align-items: center; gap: 5px;">
+                                <div
+                                    style="width: 90%; height: 20%; background:var(--blue-color); text-align:center; color:white; padding:2px;">
+                                    New (120)</div>
+                                <div
+                                    style="width: 70%; height: 20%; background:var(--yellow-color); text-align:center; color:#333; padding:2px;">
+                                    Contacted (80)</div>
+                                <div
+                                    style="width: 50%; height: 20%; background:var(--green-color); text-align:center; color:#333; padding:2px;">
+                                    Qualified (50)</div>
+                                <div
+                                    style="width: 30%; height: 20%; background:var(--purple-color); text-align:center; color:white; padding:2px;">
+                                    Converted (25)</div>
+                            </div>
+                        </div>
                     </div>
-                     <div class="tables-section">
-                        <div class="data-table-container"><h4>Recent User Logins</h4><table><thead><tr><th>User</th><th>Role</th><th>Time</th><th>IP Address</th></tr></thead><tbody><tr><td>Nandini Gupta</td><td>Manager</td><td>2 mins ago</td><td>192.168.1.10</td></tr><tr><td>Ritik Sharma</td><td>Admin</td><td>15 mins ago</td><td>10.0.0.5</td></tr><tr><td>Shubhanshu Verma</td><td>User</td><td>1 hour ago</td><td>172.16.0.8</td></tr></tbody></table></div>
-                        <div class="data-table-container"><h4>Pending Tasks</h4><table><thead><tr><th>Task</th><th>Assigned To</th><th>Due Date</th><th>Priority</th></tr></thead><tbody><tr><td>Review New Leads</td><td>Nandini G.</td><td>2024-08-02</td><td><span class="status high">High</span></td></tr><tr><td>Approve Onboarding X</td><td>Pranjal D.</td><td>2024-08-03</td><td><span class="status medium">Medium</span></td></tr><tr><td>System Update Check</td><td>Ritik S.</td><td>2024-08-05</td><td><span class="status low">Low</span></td></tr></tbody></table></div>
+                    <div class="tables-section">
+                        <div class="data-table-container">
+                            <h4>Recent User Logins</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Role</th>
+                                        <th>Time</th>
+                                        <th>IP Address</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nandini Gupta</td>
+                                        <td>Manager</td>
+                                        <td>2 mins ago</td>
+                                        <td>192.168.1.10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ritik Sharma</td>
+                                        <td>Admin</td>
+                                        <td>15 mins ago</td>
+                                        <td>10.0.0.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shubhanshu Verma</td>
+                                        <td>User</td>
+                                        <td>1 hour ago</td>
+                                        <td>172.16.0.8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="data-table-container">
+                            <h4>Pending Tasks</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Assigned To</th>
+                                        <th>Due Date</th>
+                                        <th>Priority</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Review New Leads</td>
+                                        <td>Nandini G.</td>
+                                        <td>2024-08-02</td>
+                                        <td><span class="status high">High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approve Onboarding X</td>
+                                        <td>Pranjal D.</td>
+                                        <td>2024-08-03</td>
+                                        <td><span class="status medium">Medium</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>System Update Check</td>
+                                        <td>Ritik S.</td>
+                                        <td>2024-08-05</td>
+                                        <td><span class="status low">Low</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </section>
 
                 <section id="leads-page" class="page-content">
-                     <div class="page-header-actions">
+                    <div class="page-header-actions">
                         <input type="text" placeholder="Search Leads..." class="search-bar">
                         <button class="btn btn-primary"><i class="fas fa-plus"></i> Add Lead</button>
                     </div>
-                     <div class="data-table-container">
+                    <div class="data-table-container">
                         <table>
-                            <thead><tr><th>Lead Name</th><th>Email</th><th>Phone</th><th>Status</th><th>Source</th><th>Assigned To</th><th>Actions</th></tr></thead>
+                            <thead>
+                                <tr>
+                                    <th>Lead Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Status</th>
+                                    <th>Source</th>
+                                    <th>Assigned To</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
                             <tbody>
-                                <tr><td>Aarav Singh</td><td>aarav.s@example.com</td><td>(91) 98XXX0101</td><td><span class="status new">New</span></td><td>Website</td><td>Sales Team Alpha</td><td><button class="btn-small btn-edit-lead"><i class="fas fa-edit"></i></button> <button class="btn-small btn-delete"><i class="fas fa-trash"></i></button></td></tr>
-                                <tr><td>Isha Agarwal</td><td>isha.a@example.com</td><td>(91) 97XXX0202</td><td><span class="status contact">Contacted</span></td><td>Referral</td><td>Rohan M.</td><td><button class="btn-small btn-edit-lead"><i class="fas fa-edit"></i></button> <button class="btn-small btn-delete"><i class="fas fa-trash"></i></button></td></tr>
+                                <tr>
+                                    <td>Aarav Singh</td>
+                                    <td>aarav.s@example.com</td>
+                                    <td>(91) 98XXX0101</td>
+                                    <td><span class="status new">New</span></td>
+                                    <td>Website</td>
+                                    <td>Sales Team Alpha</td>
+                                    <td><button class="btn-small btn-edit-lead"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-small btn-delete"><i class="fas fa-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Isha Agarwal</td>
+                                    <td>isha.a@example.com</td>
+                                    <td>(91) 97XXX0202</td>
+                                    <td><span class="status contact">Contacted</span></td>
+                                    <td>Referral</td>
+                                    <td>Rohan M.</td>
+                                    <td><button class="btn-small btn-edit-lead"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-small btn-delete"><i class="fas fa-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Himanshu Joshi</td>
+                                    <td>himanshu.j@example.com</td>
+                                    <td>(91) 96XXX0303</td>
+                                    <td><span class="status qualified">Qualified</span></td>
+                                    <td>Cold Call</td>
+                                    <td>Sales Team Beta</td>
+                                    <td><button class="btn-small btn-edit-lead"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-small btn-delete"><i class="fas fa-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Meera Reddy</td>
+                                    <td>meera.r@example.com</td>
+                                    <td>(91) 95XXX0404</td>
+                                    <td><span class="status proposal">Proposal</span></td>
+                                    <td>Partner</td>
+                                    <td>Sneha P.</td>
+                                    <td><button class="btn-small btn-edit-lead"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-small btn-delete"><i class="fas fa-trash"></i></button></td>
+                                </tr>
                             </tbody>
                         </table>
-                        <div class="pagination"><a href="#">«</a> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">»</a></div>
+                        <div class="pagination">
+                            <a href="#">«</a> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a
+                                href="#">»</a>
+                        </div>
                     </div>
                 </section>
 
                 <section id="users-page" class="page-content">
                     <h2>User Management</h2>
-                     <div class="page-header-actions">
+                    <div class="page-header-actions">
                         <div>
-                            <button class="btn btn-secondary" id="selectAllUsersBtn"><i class="fas fa-check-square"></i> Select All</button>
-                            <button class="btn btn-secondary" id="deselectAllUsersBtn"><i class="far fa-square"></i> Deselect All</button>
+                            <button class="btn btn-secondary" id="selectAllUsersBtn"><i class="fas fa-check-square"></i>
+                                Select All</button>
+                            <button class="btn btn-secondary" id="deselectAllUsersBtn"><i class="far fa-square"></i>
+                                Deselect All</button>
                         </div>
                         <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Add User</button>
                     </div>
                     <div class="data-table-container">
                         <table>
-                            <thead><tr><th><input type="checkbox" id="masterUserCheckbox" title="Select/Deselect All"></th><th>User Name</th><th>Email</th><th>User Type</th><th>Status</th><th>Last Login</th><th>Actions</th></tr></thead>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="masterUserCheckbox" title="Select/Deselect All"></th>
+                                    <th>User Name</th>
+                                    <th>Email</th>
+                                    <th>User Type</th>
+                                    <th>Status</th>
+                                    <th>Last Login</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
                             <tbody id="usersTableBody">
-                                <tr><td><input type="checkbox" class="user-select-checkbox"></td><td>Nandini Gupta</td><td>nandini.g@example.com</td><td>Manager</td><td><span class="status active-client">Active</span></td><td>2024-07-30 10:00 AM</td><td><button class="btn-small btn-edit-user" data-userid="1"><i class="fas fa-edit"></i> Edit</button></td></tr>
-                                <tr><td><input type="checkbox" class="user-select-checkbox"></td><td>Ritik Sharma</td><td>ritik.s@example.com</td><td>Admin</td><td><span class="status active-client">Active</span></td><td>2024-07-30 09:45 AM</td><td><button class="btn-small btn-edit-user" data-userid="2"><i class="fas fa-edit"></i> Edit</button></td></tr>
+                                <tr>
+                                    <td><input type="checkbox" class="user-select-checkbox"></td>
+                                    <td>Nandini Gupta</td>
+                                    <td>nandini.g@example.com</td>
+                                    <td>Manager</td>
+                                    <td><span class="status active-client">Active</span></td>
+                                    <td>2024-07-30 10:00 AM</td>
+                                    <td><button class="btn-small btn-edit-user" data-userid="1"><i
+                                                class="fas fa-edit"></i> Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="user-select-checkbox"></td>
+                                    <td>Ritik Sharma</td>
+                                    <td>ritik.s@example.com</td>
+                                    <td>Admin</td>
+                                    <td><span class="status active-client">Active</span></td>
+                                    <td>2024-07-30 09:45 AM</td>
+                                    <td><button class="btn-small btn-edit-user" data-userid="2"><i
+                                                class="fas fa-edit"></i> Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="user-select-checkbox"></td>
+                                    <td>Shubhanshu Verma</td>
+                                    <td>shubhanshu.v@example.com</td>
+                                    <td>User</td>
+                                    <td><span class="status inactive-client">Inactive</span></td>
+                                    <td>2024-07-29 05:00 PM</td>
+                                    <td><button class="btn-small btn-edit-user" data-userid="3"><i
+                                                class="fas fa-edit"></i> Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="user-select-checkbox"></td>
+                                    <td>Suraj Patel</td>
+                                    <td>suraj.p@example.com</td>
+                                    <td>User</td>
+                                    <td><span class="status active-client">Active</span></td>
+                                    <td>2024-07-30 08:30 AM</td>
+                                    <td><button class="btn-small btn-edit-user" data-userid="4"><i
+                                                class="fas fa-edit"></i> Edit</button></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -114,22 +325,122 @@
 
                 <section id="onboarding-page" class="page-content">
                     <div class="tabs">
-                        <button class="tab-link active" data-tab="onboarding-l1">Level 1 Approvals</button>
-                        <button class="tab-link" data-tab="onboarding-l2">Level 2 Approvals</button>
-                        <button class="tab-link" data-tab="onboarding-l3">Completed</button>
+                        <button class="tab-link active" data-tab="onboarding-l1">Level 1 </button>
+                        <button class="tab-link" data-tab="onboarding-l2">Level 2 </button>
+                        <button class="tab-link" data-tab="onboarding-l3">Level 3</button>
                     </div>
-                    <div id="onboarding-l1" class="tab-content active"><div class="data-table-container"><h4>Pending Level 1 Approvals</h4><table><thead><tr><th>Client Name</th><th>Submitted Date</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr><td>Aditya Enterprises</td><td>2024-07-25</td><td><span class="status pending">Pending L1</span></td><td><button class="btn-small btn-approve">Approve</button> <button class="btn-small btn-reject">Reject</button></td></tr></tbody></table></div></div>
-                    <div id="onboarding-l2" class="tab-content"><div class="data-table-container"><h4>Pending Level 2 Approvals</h4><table><thead><tr><th>Client Name</th><th>L1 Approved</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr><td>Prakash Ltd.</td><td>2024-07-20</td><td><span class="status pending">Pending L2</span></td><td><button class="btn-small btn-approve">Approve</button> <button class="btn-small btn-reject">Reject</button></td></tr></tbody></table></div></div>
-                    <div id="onboarding-l3" class="tab-content"><div class="data-table-container"><h4>Completed Onboarding</h4><table><thead><tr><th>Client Name</th><th>Onboarded</th><th>Details</th></tr></thead><tbody><tr><td>Kiran Exports</td><td>2024-07-01</td><td><button class="btn-small">View Log</button></td></tr></tbody></table></div></div>
+                    <div id="onboarding-l1" class="tab-content active">
+                        <h4>Pending Level 1 Approvals</h4>
+                        <div class="data-table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Client Name</th>
+                                        <th>Submitted Date</th>
+                                        <th>Assigned To</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Aditya Enterprises</td>
+                                        <td>2024-07-25</td>
+                                        <td>Operations India</td>
+                                        <td><span class="status pending">Approved</span></td>
+                                        <td><button class="btn-small btn-approve">Approve</button> <button
+                                                class="btn-small btn-reject">Reject</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samarth Group</td>
+                                        <td>2024-07-26</td>
+                                        <td>Operations India</td>
+                                        <td><span class="status pending">Pending L1</span></td>
+                                        <td><button class="btn-small btn-approve">Approve</button> <button
+                                                class="btn-small btn-reject">Reject</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="onboarding-l2" class="tab-content">
+                        <h4>Pending Level 2 Approvals</h4>
+                        <div class="data-table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Client Name</th>
+                                        <th>L1 Approved Date</th>
+                                        <th>Assigned To</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Prakash Ltd.</td>
+                                        <td>2024-07-20</td>
+                                        <td>Sr. Management</td>
+                                        <td><span class="status pending">Pending L2</span></td>
+                                        <td><button class="btn-small btn-approve">Approve</button> <button
+                                                class="btn-small btn-reject">Reject</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="onboarding-l3" class="tab-content">
+                        <h4>Completed Onboarding</h4>
+                        <div class="data-table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Client Name</th>
+                                        <th>Onboarding Date</th>
+                                        <th>Onboarded By</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kiran Exports</td>
+                                        <td>2024-07-01</td>
+                                        <td>Onboarding Dept.</td>
+                                        <td><button class="btn-small">View Log</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="messaging-page" class="page-content">
                     <div class="form-container messaging-form">
                         <h4>Messaging Console</h4>
+                        <div class="form-group">
+                            <label for="msg-template">Template</label>
+                            <select id="msg-template">
+                                <option>No Template</option>
+                                <option>Welcome Email (New Lead)</option>
+                                <option>Follow-up Reminder (Qualified)</option>
+                                <option>User Account Update</option>
+                            </select>
+                        </div>
                         <div class="form-group message-medium-group">
                             <label>Communication Medium:</label>
-                            <div><input type="radio" id="msgMediumWhatsapp" name="msgMedium" value="whatsapp" checked><label for="msgMediumWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</label></div>
-                            <div><input type="radio" id="msgMediumEmail" name="msgMedium" value="email"><label for="msgMediumEmail"><i class="fas fa-envelope"></i> Email</label></div>
+                            <div>
+                                <input type="radio" id="msgMediumWhatsapp" name="msgMedium" value="whatsapp" checked>
+                                <label for="msgMediumWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="msgMediumEmail" name="msgMedium" value="email">
+                                <label for="msgMediumEmail"><i class="fas fa-envelope"></i> Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="msg-recipient">Recipient (Lead/User)</label>
+                            <input type="text" id="msg-recipient"
+                                placeholder="Search (e.g., Ritik Sharma, Aarav Singh)...">
                         </div>
                         <div class="form-group">
                             <label for="msg-subject">Subject (for Email)</label>
@@ -137,7 +448,7 @@
                         </div>
                         <div class="form-group">
                             <label for="msg-body">Message</label>
-                            <textarea id="msg-body" rows="10" placeholder="Compose your message..."></textarea>
+                            <textarea id="msg-body" rows="8" placeholder="Compose your message..."></textarea>
                         </div>
                         <div class="form-actions">
                             <button class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
@@ -148,104 +459,142 @@
 
                 <section id="reports-page" class="page-content">
                     <h2>Reports & Analytics</h2>
-                    <p>Detailed reports and analytics dashboards will be displayed here, styled with the new theme.</p>
-                     <div class="charts-section">
-                        <div class="chart-container"><h4>User Engagement Q3 2024</h4><div class="chart-placeholder" style="background-color: var(--secondary-bg);"></div></div>
-                        <div class="chart-container"><h4>Task Completion Rate</h4><div class="chart-placeholder" style="background-color: var(--secondary-bg); border-radius:50%; background-image: conic-gradient(var(--accent-color) 0% 65%, var(--green-color) 65% 85%, var(--yellow-color) 85% 100%);"></div></div>
+                    <p>Detailed reports and analytics dashboards will be displayed here.</p>
+                    <div class="charts-section">
+                        <div class="chart-container">
+                            <h4>User Engagement Q3 2024</h4>
+                            <div class="chart-placeholder"
+                                style="height: 250px; background-image: repeating-linear-gradient(45deg, #4a476a, #4a476a 10px, #5d5a88 10px, #5d5a88 20px);">
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h4>Task Completion Rate</h4>
+                            <div class="chart-placeholder"
+                                style="height: 250px; border-radius:50%; background-image: conic-gradient(var(--accent-color) 0% 65%, var(--green-color) 65% 85%, var(--yellow-color) 85% 100%);">
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section id="settings-page" class="page-content">
-                    <h2>My Profile Settings</h2>
+                    <h2>System Settings</h2>
+                    <p>Admin controls, integrations, and other CRM configurations.</p>
                     <div class="form-container settings-form">
-                        <h4>Edit Your Profile</h4>
+                        <h4>General Settings</h4>
                         <div class="form-group">
-                            <label for="setting-name">Full Name</label>
-                            <input type="text" id="setting-name" value="Pranjal Kumar Dwivedi">
-                        </div>
-                        <div class="form-group">
-                            <label for="setting-email">Email Address</label>
-                            <input type="email" id="setting-email" value="pranjal.dwivedi@example.com" readonly>
-                        </div>
-                         <div class="form-group">
-                            <label for="setting-phone">Phone Number</label>
-                            <input type="text" id="setting-phone" placeholder="+91 XXXXX XXXXX">
-                        </div>
-                         <div class="form-group">
-                            <label for="setting-password">Change Password</label>
-                            <input type="password" id="setting-password" placeholder="New Password">
+                            <label for="setting-company-name">Company Name</label>
+                            <input type="text" id="setting-company-name" value="CRM Pro Solutions">
                         </div>
                         <div class="form-group">
-                            <label for="setting-confirm-password">Confirm New Password</label>
-                            <input type="password" id="setting-confirm-password" placeholder="Confirm New Password">
+                            <label for="setting-timezone">Timezone</label>
+                            <select id="setting-timezone">
+                                <option value="UTC-5">EST (UTC-5)</option>
+                                <option value="UTC+5.5" selected>IST (UTC+5:30)</option>
+                                <option value="UTC+0">GMT (UTC+0)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="setting-admin-email">Admin Notification Email</label>
+                            <input type="email" id="setting-admin-email" value="admin@crmpro.com">
                         </div>
                         <div class="form-actions">
-                            <button class="btn btn-primary" id="saveProfileChangesBtn">Save Profile Changes</button>
+                            <button class="btn btn-primary">Save General Settings</button>
                         </div>
                     </div>
                 </section>
+
             </div>
         </main>
     </div>
 
-    <section id="edit-user-page" class="page-content">
-        <header class="edit-user-page-header">
-             <h2>Edit User Details</h2>
-             <button class="btn btn-secondary" id="backToUsersBtn"><i class="fas fa-arrow-left"></i> Back</button>
-        </header>
-        <div class="edit-user-form-container">
-            <form id="editUserFormPage">
-                <input type="hidden" id="editUserIdPage" name="userId">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="editUserTypePage">User Type</label>
-                        <select id="editUserTypePage" name="userType"><option value="User">User</option><option value="Manager">Manager</option><option value="Admin">Admin</option></select>
+    <div id="userEditModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit User Details</h2>
+                <button class="close-btn" id="closeUserEditModal">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="editUserForm">
+                    <input type="hidden" id="editUserId" name="userId">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editUserType">User Type</label>
+                            <select id="editUserType" name="userType">
+                                <option value="User">User</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editUserFullName">Full Name</label>
+                            <input type="text" id="editUserFullName" name="fullName" readonly>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editUserGender">Gender</label>
+                            <select id="editUserGender" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="PreferNotToSay">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editUserAgeGroup">Age Group</label>
+                            <select id="editUserAgeGroup" name="ageGroup">
+                                <option value="18-25">18-25</option>
+                                <option value="26-35">26-35</option>
+                                <option value="36-45">36-45</option>
+                                <option value="45+">45+</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="editUserFullNamePage">Full Name</label>
-                        <input type="text" id="editUserFullNamePage" name="fullName">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="editUserGenderPage">Gender</label>
-                        <select id="editUserGenderPage" name="gender"><option value="Male">Male</option><option value="Female">Female</option><option value="Other">Other</option><option value="PreferNotToSay">Prefer not to say</option></select>
+                        <label for="editUserJobTitle">Job Title</label>
+                        <input type="text" id="editUserJobTitle" name="jobTitle" placeholder="e.g., Software Developer">
                     </div>
                     <div class="form-group">
-                        <label for="editUserAgeGroupPage">Age Group</label>
-                        <select id="editUserAgeGroupPage" name="ageGroup"><option value="18-25">18-25</option><option value="26-35">26-35</option><option value="36-45">36-45</option><option value="45+">45+</option></select>
+                        <label for="editUserEmail">Email</label>
+                        <input type="email" id="editUserEmail" name="email" readonly>
                     </div>
-                </div>
-                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="editUserJobTitlePage">Job Title</label>
-                        <input type="text" id="editUserJobTitlePage" name="jobTitle" placeholder="e.g., Software Developer">
-                    </div>
-                    <div class="form-group">
-                        <label for="editUserEmailPage">Email</label>
-                        <input type="email" id="editUserEmailPage" name="email">
-                    </div>
-                </div>
 
-                <h4>Session Progress (Weekly)</h4>
-                <div class="edit-user-page-chart">
-                    <svg viewBox="0 0 100 50">
-                        <rect x="5" y="25" width="10" height="25" fill="var(--blue-color)" rx="2"/><rect x="20" y="15" width="10" height="35" fill="var(--accent-color)" rx="2"/><rect x="35" y="30" width="10" height="20" fill="var(--blue-color)" rx="2"/><rect x="50" y="10" width="10" height="40" fill="var(--accent-color)" rx="2"/><rect x="65" y="20" width="10" height="30" fill="var(--blue-color)" rx="2"/><rect x="80" y="5" width="10" height="45" fill="var(--accent-color)" rx="2"/>
-                         <text x="7" y="48" font-size="4" fill="var(--text-secondary)">W1</text><text x="22" y="48" font-size="4" fill="var(--text-secondary)">W2</text><text x="37" y="48" font-size="4" fill="var(--text-secondary)">W3</text><text x="52" y="48" font-size="4" fill="var(--text-secondary)">W4</text><text x="67" y="48" font-size="4" fill="var(--text-secondary)">W5</text><text x="82" y="48" font-size="4" fill="var(--text-secondary)">W6</text>
-                    </svg>
-                    <small style="display:block; text-align:center; margin-top:5px; color:var(--text-secondary);"><span style="color:var(--blue-color)">■</span> Completed <span style="color:var(--accent-color); margin-left:10px;">■</span> Remaining</small>
-                </div>
+                    <h4>Session Progress (Weekly)</h4>
+                    <div class="chart-placeholder modal-chart">
+                        <svg viewBox="0 0 100 50">
+                            <rect x="5" y="25" width="10" height="25" fill="var(--blue-color)" />
+                            <rect x="20" y="15" width="10" height="35" fill="var(--accent-color)" />
+                            <rect x="35" y="30" width="10" height="20" fill="var(--blue-color)" />
+                            <rect x="50" y="10" width="10" height="40" fill="var(--accent-color)" />
+                            <rect x="65" y="20" width="10" height="30" fill="var(--blue-color)" />
+                            <rect x="80" y="5" width="10" height="45" fill="var(--accent-color)" />
+                            <text x="7" y="48" font-size="4" fill="var(--text-primary)">W1</text>
+                            <text x="22" y="48" font-size="4" fill="var(--text-primary)">W2</text>
+                            <text x="37" y="48" font-size="4" fill="var(--text-primary)">W3</text>
+                            <text x="52" y="48" font-size="4" fill="var(--text-primary)">W4</text>
+                            <text x="67" y="48" font-size="4" fill="var(--text-primary)">W5</text>
+                            <text x="82" y="48" font-size="4" fill="var(--text-primary)">W6</text>
+                        </svg>
+                        <small style="display:block; text-align:center; margin-top:5px;">
+                            <span style="color:var(--blue-color)">■</span> Sessions Completed  
+                            <span style="color:var(--accent-color)">■</span> Sessions Remaining
+                        </small>
+                    </div>
 
-                <h4>Overall Session Progress</h4>
-                <div class="progress-bar-container"><div class="progress-bar" id="overallSessionProgressPage" style="width: 65%;">65%</div></div>
-                <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" id="cancelUserEditPage">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="saveUserChangesPage">Save User Details</button>
-                </div>
-            </form>
+                    <h4>Overall Session Progress</h4>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="overallSessionProgress" style="width: 65%;">65%</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelUserEdit">Cancel</button>
+                <button class="btn btn-primary" id="saveUserChanges">Save Changes</button>
+            </div>
         </div>
-    </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
