@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-bg: #f9fbfd;
     --secondary-bg: #e3e8ef;
     --glass-bg: rgba(255, 255, 255, 0.75);
@@ -12,6 +12,27 @@
     --yellow-color: #fcd34d;
     --blue-color: #60a5fa;
     --purple-color: #a78bfa;
+    --font-family: 'Poppins', sans-serif;
+    --sidebar-width: 260px;
+    --sidebar-width-collapsed: 80px;
+    --header-height: 70px;
+    --border-radius: 10px;
+    --card-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+} */
+:root {
+    --primary-bg: #f9fbfd;
+    --secondary-bg: #f9fbfd;
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(0, 0, 0, 0.04);
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --accent-color: #60a5fa;
+    --accent-hover: #60a5fa;
+    --green-color: #60a5fa;
+    --red-color: #f87171;
+    --yellow-color: #60a5fa;
+    --blue-color: #60a5fa;
+    --purple-color: #60a5fa;
     --font-family: 'Poppins', sans-serif;
     --sidebar-width: 260px;
     --sidebar-width-collapsed: 80px;
