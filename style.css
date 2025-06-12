@@ -26,13 +26,13 @@
     --glass-border: rgba(0, 0, 0, 0.04);
     --text-primary: #1e293b;
     --text-secondary: #64748b;
-    --accent-color: #60a5fa;
-    --accent-hover: #60a5fa;
-    --green-color: #60a5fa;
-    --red-color: #f87171;
-    --yellow-color: #60a5fa;
-    --blue-color: #60a5fa;
-    --purple-color: #60a5fa;
+    --accent-color: #a2ccff;
+    --accent-hover: #a2ccff;
+    --green-color: #a2ccff;
+    --red-color: #a2ccff;
+    --yellow-color: #a2ccff;
+    --blue-color: #a2ccff;
+    --purple-color: #a2ccff;
     --font-family: 'Poppins', sans-serif;
     --sidebar-width: 260px;
     --sidebar-width-collapsed: 80px;
@@ -46,6 +46,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* color: #111 !important; */
 }
 
 body {
@@ -360,22 +361,29 @@ body {
 .chart-container,
 .data-table-container,
 .form-container {
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* background: var(--glass-bg); */
+    /* backdrop-filter: blur(10px); */
+
+    border: 1px solid #b4b4b4;
+    /* -webkit-backdrop-filter: blur(10px); */
+ 
     border-radius: var(--border-radius);
     padding: 20px;
-    border: 1px solid var(--glass-border);
-    box-shadow: var(--card-shadow);
+    /* border: 1px solid rgb(202, 202, 202); */
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.form-container {
+    border: 1px solid #cacaca;
+}
+.data-table-container thead{
+
+    background-color: none !important;
 }
 
 .summary-card:hover,
 .chart-container:hover,
 .data-table-container:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 12px 40px 0 rgba(184, 184, 184, 0.45);
 }
 
 .summary-cards {
@@ -472,12 +480,14 @@ table th,
 table td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid var(--glass-border);
+    border: 1px solid #adadad;
     vertical-align: middle;
+
 }
 
 table th {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgb(155, 155, 155);
     font-weight: 600;
     font-size: 14px;
     color: var(--text-secondary);
@@ -674,7 +684,7 @@ table td input[type="checkbox"] {
 
 .pagination {
     margin-top: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .pagination a {
