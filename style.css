@@ -364,7 +364,7 @@ body {
     /* background: var(--glass-bg); */
     /* backdrop-filter: blur(10px); */
 
-    border: 1px solid #b4b4b4;
+    border: 1px solid #d3d3d3;
     /* -webkit-backdrop-filter: blur(10px); */
  
     border-radius: var(--border-radius);
@@ -374,7 +374,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .form-container {
-    border: 1px solid #cacaca;
+    border: 1px solid #d3d3d3;
 }
 .data-table-container thead{
 
@@ -480,14 +480,14 @@ table th,
 table td {
     padding: 12px 15px;
     text-align: left;
-    border: 1px solid #adadad;
+    border: 1px solid #d3d3d3;
     vertical-align: middle;
 
 }
 
 table th {
     background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgb(155, 155, 155);
+    border: 1px solid #d3d3d3;
     font-weight: 600;
     font-size: 14px;
     color: var(--text-secondary);
