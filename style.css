@@ -361,7 +361,9 @@ body {
 .chart-container,
 /* .data-table-container, */
 .form-container {
-    /* background: var(--glass-bg); */
+    /* background: var(--glass-bg); 
+    
+    */
     /* backdrop-filter: blur(10px); */
 
     border: 1px solid #d3d3d3;
@@ -514,60 +516,50 @@ table td input[type="checkbox"] {
 .status {
     padding: 4px 8px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
     color: #111;
 }
 
 .status.new {
-    background-color: var(--blue-color);
     color: white;
 }
 
 .status.contact,
 .status.contacted {
-    background-color: var(--yellow-color);
     color: #333;
 }
 
 .status.qualified {
-    background-color: var(--green-color);
     color: #333;
 }
 
 .status.proposal {
-    background-color: var(--purple-color);
     color: white;
 }
 
 .status.active-client {
-    background-color: var(--green-color);
     color: #333;
 }
 
 .status.inactive-client {
-    background-color: var(--text-secondary);
     color: var(--primary-bg);
 }
 
 .status.pending {
-    background-color: var(--yellow-color);
     color: #333;
 }
 
 .status.high {
-    background-color: var(--red-color);
     color: white;
 }
 
 .status.medium {
-    background-color: var(--yellow-color);
     color: #333;
 }
 
 .status.low {
-    background-color: var(--blue-color);
     color: white;
 }
 
@@ -709,7 +701,7 @@ table td input[type="checkbox"] {
 }
 
 .form-container {
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: 0 auto;
 }
 
@@ -736,6 +728,7 @@ table td input[type="checkbox"] {
 .form-group input[type="password"],
 .form-group select,
 .form-group textarea {
+    max-width: 700px;
     width: 100%;
     padding: 12px 15px;
     border-radius: var(--border-radius);
@@ -791,19 +784,20 @@ table td input[type="checkbox"] {
 .message-medium-group input[type="radio"] {
     width: auto;
     margin-right: 8px;
-    accent-color: var(--accent-color);
+    accent-color: black;
+
 }
 
 .message-medium-group label[for^="msgMedium"] {
     font-weight: normal;
-    color: var(--text-primary);
+    color: rgb(0, 0, 0);
     margin-bottom: 0;
     cursor: pointer;
 }
 
 .message-medium-group label[for^="msgMedium"] i {
     margin-right: 5px;
-    color: var(--accent-color);
+    color:black;
 }
 
 .tabs {
@@ -1184,4 +1178,52 @@ table td input[type="checkbox"] {
     .modal-footer button {
         width: 100%;
     }
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #2C2F33; /* adjust based on your sidebar bg */
+    min-width: 180px;
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.has-submenu:hover .submenu {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+}
+
+.submenu .nav-link {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
+    display: block;
+}
+
+.submenu .nav-link:hover {
+    background-color: #40444b;
+    color: #fff;
+}
+
+.submenu-arrow {
+    margin-left: auto;
+    font-size: 12px;
+    color: #bbb;
 }
