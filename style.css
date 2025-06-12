@@ -20,19 +20,19 @@
     --card-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
 } */
 :root {
-    --primary-bg: #f9fbfd;
+    --primary-bg: #ffffff;
     --secondary-bg: #f9fbfd;
     --glass-bg: rgba(255, 255, 255, 0.75);
     --glass-border: rgba(0, 0, 0, 0.04);
     --text-primary: #1e293b;
     --text-secondary: #64748b;
-    --accent-color: #a2ccff;
-    --accent-hover: #a2ccff;
-    --green-color: #a2ccff;
-    --red-color: #a2ccff;
-    --yellow-color: #a2ccff;
-    --blue-color: #a2ccff;
-    --purple-color: #a2ccff;
+    --accent-color: #8dc0ff;
+    --accent-hover: #8dc0ff;
+    --green-color: #8dc0ff;
+    --red-color: #8dc0ff;
+    --yellow-color: #8dc0ff;
+    --blue-color: #8dc0ff;
+    --purple-color: #8dc0ff;
     --font-family: 'Poppins', sans-serif;
     --sidebar-width: 260px;
     --sidebar-width-collapsed: 80px;
@@ -359,7 +359,7 @@ body {
 
 .summary-card,
 .chart-container,
-.data-table-container,
+/* .data-table-container, */
 .form-container {
     /* background: var(--glass-bg); */
     /* backdrop-filter: blur(10px); */
@@ -508,6 +508,7 @@ table td input[type="checkbox"] {
     height: 18px;
     cursor: pointer;
     accent-color: var(--accent-color);
+
 }
 
 .status {
@@ -738,7 +739,7 @@ table td input[type="checkbox"] {
     width: 100%;
     padding: 12px 15px;
     border-radius: var(--border-radius);
-    border: 1px solid var(--glass-border);
+    border: 1px solid #c9c9c9;
     background-color: var(--glass-bg);
     color: var(--text-primary);
     font-family: var(--font-family);
